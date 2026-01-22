@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Guides - TourEase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">TourEase.</a>
+        <nav>
+            <ul>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="guide.html" class="active">Guide</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Meet Our Guides</h1>
+        <p>Expert local guides ready to assist you</p>
+    </div>
+
+    <section>
+        <div class="section-title">Find a <span>Guide</span></div>
+
+        <div style="text-align: center; margin-bottom: 50px;">
+            <label style="color: var(--text-muted); font-size: 1.2rem; margin-right: 10px;">Select Location:</label>
+            <select id="place-select"
+                style="padding: 10px; border-radius: 5px; background: #1e293b; color: white; border: 1px solid #334155;">
+                <option value="">All Locations</option>
+                <!-- Populated by JS -->
+            </select>
+        </div>
+
+        <h2 style="color: var(--secondary); margin-bottom: 30px;">Women Guides</h2>
+        <div class="grid" id="women-guides">
+            <!-- Loaded by JS -->
+            <p class="text-muted">Loading...</p>
+        </div>
+
+        <div style="margin: 50px 0; border-top: 1px solid #334155;"></div>
+
+        <h2 style="color: #3b82f6; margin-bottom: 30px;">Men Guides</h2>
+        <div class="grid" id="men-guides">
+            <!-- Loaded by JS -->
+            <p class="text-muted">Loading...</p>
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
