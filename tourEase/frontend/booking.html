@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - TourEase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">TourEase.</a>
+        <nav>
+            <ul>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Book Your Trip</h1>
+        <p>Start your journey with us today</p>
+    </div>
+
+    <section>
+        <div class="section-title">Start Your <span>Journey</span></div>
+        <div class="form-container">
+            <form id="booking-form">
+                <div class="form-group">
+                    <label>Select Place</label>
+                    <select id="booking-place" required>
+                        <option value="">Loading places...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Booking Type</label>
+                    <select id="booking-type" required>
+                        <option value="Hotel">Hotel</option>
+                        <option value="Bus">Bus</option>
+                        <option value="Package">Tourist Package</option>
+                        <option value="Ticket">Entry Ticket</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" id="booking-date" required>
+                </div>
+
+                <!-- Simple Placeholder for Payment -->
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <select disabled>
+                        <option>Credit Card (Demo)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

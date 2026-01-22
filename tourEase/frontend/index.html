@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourEase - Explore the World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">TourEase.</a>
+        <nav>
+            <ul>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-btns">
+            <!-- Auth Placeholders -->
+            <a href="#" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">Sign In</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <!-- User must upload a video file called 'hero-video.mp4' in uploads/videos or uncomment below -->
+        <!-- <video src="../uploads/videos/hero-video.mp4" autoplay muted loop playsinline></video> -->
+        <video autoplay muted loop playsinline poster="../uploads/images/hero-poster.jpg" style="background: #0f172a;">
+            <!-- Placeholder for video -->
+        </video>
+
+        <div class="hero-content">
+            <h1>Discover Your Next <span>Adventure</span></h1>
+            <p>Explore top rated tours, hotels and guides for your next vacation.</p>
+            <a href="explore.html" class="btn">Start Exploring</a>
+        </div>
+    </div>
+
+    <!-- Featured Section (Preview) -->
+    <section>
+        <div class="section-title">Popular <span>Destinations</span></div>
+        <div class="grid" id="places-grid">
+            <!-- Dynamic Content Loaded via JS -->
+             <p style="text-align:center; width:100%; color: var(--text-muted);">Loading amazing places...</p>
+        </div>
+    </section>
+
+    <!-- Footer / Reviews -->
+    <footer id="reviews">
+        <div class="section-title">Traveler <span>Reviews</span></div>
+        <div class="review-carousel" id="reviews-carousel">
+            <!-- Reviews Here -->
+        </div>
+
+        <div class="footer-content" id="contact" style="margin-top: 50px;">
+            <div class="footer-col">
+                <h4>TourEase</h4>
+                <p>Making travel easy and memorable.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Owner</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
